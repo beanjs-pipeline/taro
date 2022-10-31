@@ -85,6 +85,7 @@ export default class WeappCI extends BaseCI {
         project: this.instance,
         version: this.version,
         desc: this.desc,
+        setting: require(path.join(this.instance.projectPath, 'project.config.json')).setting,
         onProgressUpdate: undefined
       })
 
@@ -108,6 +109,7 @@ export default class WeappCI extends BaseCI {
         project: this.instance,
         version: this.version,
         desc: this.desc,
+        setting: require(path.join(this.instance.projectPath, 'project.config.json')).setting,
         onProgressUpdate: undefined
       })
 

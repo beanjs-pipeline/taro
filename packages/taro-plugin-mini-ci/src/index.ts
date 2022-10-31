@@ -22,7 +22,6 @@ export default (ctx: IPluginContext, pluginOpts: CIOptions) => {
           privateKeyPath: joi.string().required(),
           type: joi.string().valid('miniProgram', 'miniProgramPlugin', 'miniGame', 'miniGamePlugin'),
           ignores: joi.array().items(joi.string().required()),
-          setting: joi.object()
         }),
         /** 字节跳动小程序上传配置 */
         tt: joi.object({
